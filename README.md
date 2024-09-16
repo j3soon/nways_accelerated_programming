@@ -3,6 +3,10 @@
 # N-ways to GPU programming
 The N-Ways to GPU Programming Bootcamp covers the basics of GPU programming and provides an overview of different methods for porting scientific application to GPUs using NVIDIA® CUDA®, OpenACC, standard languages, OpenMP offloading, and/or CuPy and Numba. Throughout the bootcamp, attendees with learn how to analyze GPU-enabled applications using NVIDIA Nsight™ Systems and participate in hands-on activities to apply these learned skills to real-world problems.
 
+## Running on [TWCC](https://www.twcc.ai/)
+
+Please follow this [TWCC README](./README_TWCC.md) to run the tutorials on TWCC.
+
 ## Bootcamp contents:
 
 The content is structured in multiple options covering the following: 
