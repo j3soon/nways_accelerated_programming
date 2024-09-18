@@ -63,7 +63,23 @@ You should now see the `nways_accelerated_programming` folder in the Jupyter fil
 
 ![](docs/images/18-jupyter-files.png)
 
-Navigate to `nways_accelerated_programming/_basic` and open the `_start_nways.ipynb` notebook.
+## Running the Notebooks
+
+1. Navigate to `nways_accelerated_programming/_basic` and open the `_start_nways.ipynb` notebook.
+
+   ![](docs/images/19-jupyter-open-notebook.png)
+
+2. This will open the Jupyter Notebook GUI. Click the `JupyterLab` button at the top-right to open the Jupyter Lab GUI instead.
+
+   ![](docs/images/20-jupyter-notebook.png)
+
+3. After switching to Jupyter Lab, you may observe that it is in the **Simple Interface** mode. Uncheck the `Simple` toggle at the bottom-left to switch to the **Multi document IDE** mode.
+
+   ![](docs/images/21-jupyter-lab-simple.png)
+
+4. Congratulations! You are now ready to run the notebooks in Jupyter Lab **Multi document IDE** mode.
+
+   ![](docs/images/22-jupyter-lab.png)
 
 ## Deleting the Container
 
@@ -88,6 +104,16 @@ and then delete and re-create the container (restarting the Jupyter kernel may n
 
 After that, you should re-run the environment setup steps above (`rm`/`ln`/`chown`).
 
+### Unable to Edit Files in Jupyter Notebook
+
+If you open the C/C++ or Fortran files by clicking the code link in the Jupyter Notebook, you may not be able to edit the files.
+
+![](docs/images/faq-unable-to-edit-files-1.png)
+
+Please switch to Jupyter Lab **Multi document IDE** mode instead to allow easy editing of the files. Please follow the [Running the Notebooks](#running-the-notebooks) section above to switch to Jupyter Lab.
+
+![](docs/images/faq-unable-to-edit-files-2.png)
+
 ### Disk Quota Exceeded
 
 This may happen if you are using TWCC in the past and have somehow end up with zero disk quota due to no subscribed projects.
@@ -101,7 +127,9 @@ error: copy-fd: write returned: Disk quota exceeded
 fatal: cannot copy '/usr/share/git-core/templates/hooks/fsmonitor-watchman.sample' to '/home/uXXXXXXX/nways_accelerated_programming/.git/hooks/fsmonitor-watchman.sample': Disk quota exceeded
 ```
 
-Click `VIEW DETAILS` in the user dashboard and check if the `Total Storage` quota is below `100GiB`. If so, you indeed stumbled upon the disk quota issue. The `HFS Portal` should show similar results.
+Click `VIEW DETAILS` in the user dashboard and check if the `Total Storage` quota is below `100GiB`. If so, you indeed stumbled upon this disk quota issue. The `HFS Portal` should show similar results.
+
+> If the `Total Storage` quota is equal or above `100GiB`, you simply need to remove unnecessary files to free up disk space.
 
 ![](docs/images/faq-disk-quota-issue-1.png)
 ![](docs/images/faq-disk-quota-issue-2.png)
