@@ -58,6 +58,8 @@ sudo apt-get -y update && \
     pip3 install --upgrade pip && \
     pip3 install gdown
 python3 /labs/_common/dataset.py
+# Download the N-WAY Bootcamp Challenges
+gdown 11L0M9ezG1O-wYCid67Qq3NGH1mCHYVPL
 # All done! Go back to Jupyter Notebook / Jupyter Lab
 ```
 
