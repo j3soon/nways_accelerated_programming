@@ -1,5 +1,9 @@
 # Running on TWCC
 
+## Install [Nsight Systems](https://developer.nvidia.com/nsight-systems)
+
+Install [Nsight Systems](https://developer.nvidia.com/nsight-systems) locally on your machine. This tool will be used to visualize the profiling results for the labs.
+
 ## Create Container
 
 1. Visit TWCC (<https://www.twcc.ai>) and click `Sign In`.
