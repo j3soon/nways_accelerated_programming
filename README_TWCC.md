@@ -151,6 +151,12 @@ Follow the steps below to resolve the issue:
    ![](docs/images/faq-disk-quota-solution-5.png)
    ![](docs/images/faq-disk-quota-solution-6.png)
 
+### Interactive Container Not Showing Up
+
+If you encountered the following issue where the **Interactive Container** service isn't showing up, wait for a while and it should show up within a few minutes.
+
+![](docs/images/faq-no-interactive-container.png)
+
 ### Unexpected Errors During sudo
 
 If you encountered the following error message when running `sudo rm -rf /workspace`:
