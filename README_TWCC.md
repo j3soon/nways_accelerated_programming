@@ -54,12 +54,14 @@ cd ~
 git clone https://github.com/j3soon/nways_accelerated_programming
 sudo ln -s $HOME/nways_accelerated_programming/_basic /labs
 sudo apt-get -y update && \
-    DEBIAN_FRONTEND=noninteractive sudo apt-get -yq install --no-install-recommends python3-pip python3-setuptools nginx zip make build-essential libtbb-dev python3-dev && \
+    DEBIAN_FRONTEND=noninteractive sudo apt-get -yq install --no-install-recommends python3-pip python3-setuptools nginx zip unzip make build-essential libtbb-dev python3-dev && \
     pip3 install --upgrade pip && \
     pip3 install gdown
 python3 /labs/_common/dataset.py
 # Download the N-WAY Bootcamp Challenges
+cd /labs;
 gdown 11L0M9ezG1O-wYCid67Qq3NGH1mCHYVPL
+unzip nways_accelerated_programming_challenge-master.zip
 # All done! Go back to Jupyter Notebook / Jupyter Lab
 ```
 
