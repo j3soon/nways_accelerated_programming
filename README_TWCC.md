@@ -73,7 +73,7 @@ You should now see the `nways_accelerated_programming` folder in the Jupyter fil
 
 ## Running the Notebooks
 
-1. Navigate to `nways_accelerated_programming/_basic` and open the `_start_nways.ipynb` notebook.
+1. Navigate to `/nways_accelerated_programming/_basic` and open the `_start_nways.ipynb` notebook.
 
    ![](docs/images/19-jupyter-open-notebook.png)
 
@@ -88,6 +88,10 @@ You should now see the `nways_accelerated_programming` folder in the Jupyter fil
 4. Congratulations! You are now ready to run the notebooks in Jupyter Lab **Multi document IDE** mode.
 
    ![](docs/images/22-jupyter-lab.png)
+
+## Challenge
+
+Open the `/nways_accelerated_programming/_basic/nways_accelerated_programming_challenge-master/nways_cfd/English/minicfd.ipynb` notebook.
 
 ## Deleting the Container
 
