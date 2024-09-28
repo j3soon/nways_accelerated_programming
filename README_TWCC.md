@@ -1,5 +1,9 @@
 # Running on TWCC
 
+## Updates
+
+**2024/09/27**: Slides and recordings are released at [nqobu/nvidia](https://github.com/nqobu/nvidia/tree/main/20240924).
+
 ## Install [Nsight Systems](https://developer.nvidia.com/nsight-systems)
 
 Install [Nsight Systems](https://developer.nvidia.com/nsight-systems) locally on your machine. This tool will be used to visualize the profiling results for the labs.
