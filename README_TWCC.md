@@ -130,6 +130,10 @@ Please switch to Jupyter Lab **Multi document IDE** mode instead to allow easy e
 
 ![](docs/images/faq-unable-to-edit-files-2.png)
 
+### Fortran Code Produces No Output
+
+If your Fortran code produces no output, try replacing calls to `write(24,*)` with `print*,`,. This change seems to resolve the issue, though we haven't investigate the exact reason yet.
+
 ### Disk Quota Exceeded
 
 This may happen if you are using TWCC in the past and have somehow end up with zero disk quota due to no subscribed projects.
