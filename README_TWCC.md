@@ -2,7 +2,7 @@
 
 ## Updates
 
-**2024/09/27**: Slides and recordings are released at [nqobu/nvidia](https://github.com/nqobu/nvidia/tree/main/20240924).
+**2024/09/27**: Previous slides and recordings are released at [nqobu/nvidia](https://github.com/nqobu/nvidia/tree/main/20240924).
 
 ## Install [Nsight Systems](https://developer.nvidia.com/nsight-systems)
 
@@ -64,10 +64,14 @@ sudo apt-get -y update && \
 python3 /labs/_common/dataset.py
 # Download the N-WAY Bootcamp Challenges
 cd /labs;
-gdown 11L0M9ezG1O-wYCid67Qq3NGH1mCHYVPL
+gdown 1XoLZOo_JzKSNjfG3GCoQV-XdQU9cHQFl
 unzip nways_accelerated_programming_challenge-master.zip
 # All done! Go back to Jupyter Notebook / Jupyter Lab
 ```
+
+<!--
+Challenge Google Drive Link: https://drive.google.com/file/d/1XoLZOo_JzKSNjfG3GCoQV-XdQU9cHQFl/view
+-->
 
 **Note**: To paste text in the jupyter terminal webpage, press `Ctrl+Shift+V`. To copy text, select the text, right-click, and choose `Copy`.
 
