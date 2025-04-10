@@ -38,7 +38,7 @@ Install [Nsight Systems](https://developer.nvidia.com/nsight-systems) locally on
     ![](docs/images/12-container-ready.png)
 13. Scroll down the container details page.
     ![](docs/images/13-container-details.png)
-14. Click the `LAUNCH` button in the `Jupyter` row to open the Jupyter Notebook.
+14. Click the `LAUNCH` button in the `Jupyter` row to open the Jupyter Notebook. You may need to wait for a while for the Jupyter Notebook to be ready.
     ![](docs/images/14-container-jupyter.png)
 15. Click `New` and then `Terminal` to open a terminal.
     ![](docs/images/15-jupyter.png)
@@ -62,22 +62,27 @@ sudo apt-get -y update && \
     pip3 install --upgrade pip && \
     pip3 install gdown
 python3 /labs/_common/dataset.py
-# Download the N-WAY Bootcamp Challenges
-cd /labs;
-gdown 1XoLZOo_JzKSNjfG3GCoQV-XdQU9cHQFl
-unzip nways_accelerated_programming_challenge-master.zip
+# Clone the N-WAY Bootcamp Challenges
+cd /labs
+git clone https://github.com/j3soon/nways_accelerated_programming_challenge
 # All done! Go back to Jupyter Notebook / Jupyter Lab
 ```
 
-<!--
-Challenge Google Drive Link: https://drive.google.com/file/d/1XoLZOo_JzKSNjfG3GCoQV-XdQU9cHQFl/view
--->
-
 **Note**: To paste text in the jupyter terminal webpage, press `Ctrl+Shift+V`. To copy text, select the text, right-click, and choose `Copy`.
 
-You should now see the `nways_accelerated_programming` folder in the Jupyter file browser.
+After clicking the upper-right refresh button, you should now see the `nways_accelerated_programming` folder in the Jupyter file browser.
 
 ![](docs/images/18-jupyter-files.png)
+
+> If you have somehow restarted the container, you should re-run all the commands above except the two `git clone` commands and the dataset download command: `python3 /labs/_common/dataset.py`. This is because those commands will store the files in your mounted home directory, which persists across container restarts.
+> ```sh
+> cd ~
+> sudo ln -s $HOME/nways_accelerated_programming/_basic /labs
+> sudo apt-get -y update && \
+>     DEBIAN_FRONTEND=noninteractive sudo apt-get -yq install --no-install-recommends python3-pip python3-setuptools nginx zip unzip make build-essential libtbb-dev python3-dev && \
+>     pip3 install --upgrade pip && \
+>     pip3 install gdown
+> ```
 
 ## Running the Notebooks
 
@@ -123,6 +128,18 @@ mv ~/.bashrc ~/.bashrc.bak
 and then delete and re-create the container (restarting the Jupyter kernel may not be enough).
 
 After that, you should re-run the environment setup steps above (`rm`/`ln`/`chown`).
+
+> Since some users may have previously set up their environment for their own use, a quick and reliable hack is to move all files and directories under `~` to `~/backup`.
+> ```sh
+> cd ~
+> ls -al
+> mkdir ~/backup
+> mv * ~/backup
+> mv .* ~/backup
+> ls -al
+> ls -al ~/backup
+> ```
+> and then re-create the container.
 
 ### Unable to Edit Files in Jupyter Notebook
 
