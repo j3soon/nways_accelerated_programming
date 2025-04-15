@@ -25,7 +25,10 @@ Install [Nsight Systems](https://developer.nvidia.com/nsight-systems) locally on
    ![](docs/images/06-interactive-container.png)
 7. Search for `hpc` and click it.
    ![](docs/images/07-hpc-container.png)
-8. Select container image `nvhpc-24.5-devel-cuda_multi-ubuntu22.04:latest`, and then scroll down.
+8. Select container image `nvhpc-25.1-devel-cuda_multi-ubuntu22.04:latest`, and then scroll down.
+
+   > `nvhpc-24.5-devel-cuda_multi-ubuntu22.04:latest` should also work, but we recommend using the latest version.
+
    ![](docs/images/08-container-image.png)
 9. Select `c.super` (V100 GPU x1) for the configuration type, and click `REVIEW & CREATE`
    ![](docs/images/09-container-gpu.png)
