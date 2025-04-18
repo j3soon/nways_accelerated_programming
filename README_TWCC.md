@@ -2,7 +2,7 @@
 
 ## Updates
 
-**2024/09/27**: Previous slides and recordings are released at [nqobu/nvidia](https://github.com/nqobu/nvidia/tree/main/20240924).
+**2025/04/19**: Slides and recordings are released at [nqobu/nvidia](https://github.com/nqobu/nvidia/tree/main/20250415).
 
 ## Install [Nsight Systems](https://developer.nvidia.com/nsight-systems)
 
@@ -159,6 +159,17 @@ Please switch to Jupyter Lab **Multi document IDE** mode instead to allow easy e
 If your Fortran code produces no output, try replacing calls to `write(24,*)` with `print*,`,. This change seems to resolve the issue, though we haven't investigate the exact reason yet.
 
 ### Disk Quota Exceeded
+
+Check your storage with:
+
+```sh
+cd ~
+du -sh .[!.]* *
+```
+
+Clean up large files by deleting them. Note that deleting files in Jupyter Lab may result in the file being sent to the trash (`~/.local/share/Trash`) instead of being truly deleted.
+
+### Disk Quota Exceeded - No Subscribed Projects
 
 This may happen if you are using TWCC in the past and have somehow end up with zero disk quota due to no subscribed projects.
 
